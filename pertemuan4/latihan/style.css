@@ -1,0 +1,21 @@
+.kotak1, .kotak2, .kotak3 {
+    width: 200px;
+    height: 200px;
+}
+
+.kotak1 {
+    background-color: palevioletred;
+    padding: 70px 50px;
+}
+
+.kotak2 {
+    background-color: pink;
+    margin: 70px 30px;
+}
+
+.kotak3 {
+    background-color: rgb(254, 221, 227);
+    margin-left: 70px;
+    margin-top: 30px;
+    border: 2px dashed brown;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    
+    <form action="result.html">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" placeholder="Masukkan nama Anda" minlength="3" maxlength="20" required>
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Masukkan email Anda" required>
+        <br><br>
+
+       <label>Alamat:<textarea rows="10" cols="30" required></textarea></label>
+       <br><br>
+
+        <label for="pwd">Password:</label>
+        <input type="password" id="pwd" placeholder="*******" required>
+        <br><br>
+
+        <label for="num">Jumlah Beli:</label>
+        <input type="number" id="num" min="1" max="20">
+        <br><br>
+
+        <label><input type="radio" name="jk">Laki-Laki</label>
+        <label><input type="radio" name="jk">Perempuan</label>
+        <hr>
+
+        <label><input type="checkbox" name="">Menu 1</label>
+        <label><input type="checkbox" name="">Menu 2</label>
+        <label><input type="checkbox" name="">Menu 3</label>
+        <label><input type="checkbox" name="">Menu 4</label>
+        <label><input type="checkbox" name="">Menu 5</label>
+        <br><br>
+
+        <!--SHORTHAND (label>input:checkbox+{Menu $})*5 -->
+        
+        <select name="" id="">
+            <option value="">Indonesia</option>
+            <option value="">Malaysia</option>
+            <option value="">Filipina</option>
+            <option value="">Myanmar</option>
+            <option value="">Brunei</option>
+            <option value="">Vietnam</option>
+            <option value="">Thailand</option>
+            <option value="">Laos</option>
+            <option value="">Singapore</option>
+            <option value="">Kamboja</option>
+            <option value="">Timor Leste</option>
+        </select>
+        <br><br>
+
+        <!-- SHORTHAND select>option{pilihan $}*10 -->
+
+        <button>Tombol Button</button>
+        <input type="submit" value="Tombol Input">
+        <button type="reset">Tombol Reset</button>
+        <button disabled>Disable</button>
+    </form>
+    
+</body>
+</html>

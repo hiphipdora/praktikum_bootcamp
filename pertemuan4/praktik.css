@@ -1,0 +1,20 @@
+p, h1 {
+    color: darkolivegreen;
+    background-color: beige;
+}
+
+h1 {
+    text-align: center;
+}
+
+#p1 {
+    background-color: black;
+    color: lightcyan;
+}
+
+.p3 {
+    background-color: pink;
+    color: darkred;
+}
+
+/* FOR MORE SPESIFIC div > .p3 */

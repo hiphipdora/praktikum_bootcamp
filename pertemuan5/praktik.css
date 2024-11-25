@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+}
+
+.kotak {
+    width: 70%;
+    height: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    margin: 0 auto;
+    justify-content:center ;
+    align-items: center;
+}
+
+div > div {
+    width: 100px;
+    height: 100px;
+}
+
+.kotak1 {
+    background-color: palevioletred;
+}
+
+.kotak2 {
+    background-color: pink;
+}
+
+.kotak3 {
+    background-color: burlywood;
+}
+
+.kotak4 {
+    background-color: palegoldenrod;
+}
+
+.kotak5 {
+    background-color: darkslategrey;
+}
