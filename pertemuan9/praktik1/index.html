@@ -1,0 +1,38 @@
+<script>
+    console.log(`Hello World!`);
+
+    const mhs1 = {
+        name: 'Putri',
+        age: 22,
+        isHungry: true,
+        hobby: ['musik', 'travel'],
+        address: {
+            country: 'Indonesia',
+            province: 'Jawa Barat',
+            city: 'Depok',
+            detail: {
+                kecamatan: 'Sukmajaya',
+                kelurahan: 'Tirtajaya',
+            },
+        },
+    };
+
+    console.log(`Halo! Nama saya ${mhs1.name}, saya sekarang berusia ${mhs1.age} tahun, saya memiliki hobby favorit yaitu ${mhs1.hobby[0]}`);
+
+    console.log(`Saya sekarang tinggal di kota ${mhs1.address.city}, kecamatan ${mhs1.address.detail.kecamatan}, dan kelurahan ${mhs1.address.detail.kelurahan}`);
+
+    const matrix = [
+        [
+            [1,2,3],
+            [4,5,6]
+        ],
+        [
+            [7,8,9]
+        ],
+        [0]
+    ];
+
+    console.log(matrix[2][0]);
+    console.log(matrix[1][0][0]);
+    console.log(matrix[0][1][1]);
+</script>
