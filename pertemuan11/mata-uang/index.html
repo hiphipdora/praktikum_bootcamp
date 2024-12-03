@@ -13,14 +13,14 @@
         <label for="valuta1">Valuta 1</label>
         <input id="valuta1" type="number" onchange="convert()">
 
-        <select name="" id="">
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
+        <select id="nilaiTukar" onchange="convert()">
+            <option selected disabled>-- Pilih Kurs Mata Uang --</option>
+            <option value="toIDR">USD ke IDR</option>
+            <option value="toUSD">IDR ke USD</option>
         </select>
 
         <label for="valuta2">Valuta 2</label>
-        <input id="valuta2" type="number">
+        <input id="valuta2" type="text" readonly>
     </form>
 
     <script src="script.js"></script>
