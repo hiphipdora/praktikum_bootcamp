@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menghitung Jumlah 2 Bilangan</title>
+</head>
+<body>
+    <form action="">
+        <input type="number" name="" id="nilai1" onchange="hitung()">
+        <p>+</p>
+        <input type="number" name="" id="nilai2" onchange="hitung()">
+        <p>=</p>
+        <input type="number" name="" id="nilaiAkhir" readonly>
+    </form>
+
+    <script>
+       
+
+        // n1.placeholder = 'Masukkan angka ke-1';
+        // n2.placeholder = 'Masukkan angka ke-2';
+
+        function hitung(){
+            let n1 = Number (document.getElementById('nilai1').value);
+            let n2 = Number (document.getElementById('nilai2').value);
+            let nA = document.getElementById('nilaiAkhir');
+            
+            nA.value = n1 + n2;
+            
+        }
+    </script>
+</body>
+</html>
