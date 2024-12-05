@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class & Object</title>
+</head>
+<body>
+    
+
+    <script>
+
+        class Fruit {
+            // property
+            // name = 'apple';
+            // color = 'red';
+
+            // constructor
+            constructor(name, color) {
+                this.name = name;
+                this.color = color;
+            }
+            
+
+            // method 
+            getName() {
+                return this.name;
+            }
+
+            getColor(){
+                return this.color;
+            }
+        }
+
+        const apple = new Fruit('apple', 'red');
+        console.log(apple.getName());
+        console.log(apple.getColor());
+        // apple.name = 'apple';
+        // apple. color = 'red';
+
+        const banana = new Fruit('banana', 'yellow');
+        console.log(banana.getName());
+        console.log(banana.getColor());
+        // banana.name = 'banana';
+        // banana.color = 'yellow';
+        
+        
+        
+        
+        
+
+
+    </script>
+
+</body>
+</html>

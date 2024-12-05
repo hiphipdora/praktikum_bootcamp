@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheritance</title>
+</head>
+<body>
+
+
+<script>
+
+class Vehicle {
+    constructor (nama, jenis, bahanBakar) {
+        this.name = nama;
+        this.type = jenis;
+        this.fuel = bahanBakar;
+    }
+    getInfoVehicle(){
+    return `Nama Kendaraan: ${this.name} Jenis Kendaraan: ${this.type} Bahan Bakar: ${this.fuel}`;
+    }
+}
+
+class Motor extends Vehicle {
+    constructor(nama, jenis, bahanBakar, jmlRoda){
+        super(nama, jenis, bahanBakar);
+        this.wheels = jmlRoda;
+    }
+    getInfoMotor(){
+        return `${super.getInfoVehicle()} Jumlah Roda: ${this.wheels}`;
+    }
+}
+
+class Submarine extends Vehicle {
+    constructor(nama, jenis, bahanBakar, maksKedalaman){
+        super(nama, jenis, bahanBakar);
+        this.maxDeep = maksKedalaman;
+    }
+    getInfoSubmarine(){
+        return `${super.getInfoVehicle()} Maksimal Kedalaman: ${this.maxDeep}m`;
+    }
+}   
+
+const motor = new Motor('Motor', 'Darat', 'Bensin', 2);
+const submarine = new Submarine('Kapal', 'Laut', 'Bensin', 1000);
+console.log(motor.getInfoMotor());
+console.log(submarine.getInfoSubmarine());
+
+
+</script>
+
+</body>
+</html>
