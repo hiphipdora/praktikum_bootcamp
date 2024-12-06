@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Body Mass Index</title>
+</head>
+<body>
+    <script type="module">
+    import BMIPasien from './bmi_pasien.js';
+
+        const data1 = new BMIPasien (1, '2024-11-22', 'P001', 'Bambang', 'Depok', '2009-12-07', 'bambang@gmail.com', 'Laki-Laki', 57, 160);
+        const data2 = new BMIPasien (2, '2024-11-22', 'P002', 'Sinta', 'Jakarta', '2009-04-10', 'sinta@gmail.com', 'Perempuan', 65, 150);
+        const data3 = new BMIPasien (3, '2024-11-22', 'P003', 'Bambang', 'Surabaya', '2009-08-07', 'bambang@gmail.com', 'Laki-Laki', 78, 165);
+        const data4 = new BMIPasien (4, '2024-11-22', 'P004', 'Sinta', 'Yogyakarta', '2009-12-08', 'sinta@gmail.com', 'Perempuan', 48, 155);
+        const data5 = new BMIPasien (5, '2024-11-22', 'P005', 'Bambang', 'Sukabumi', '2009-10-05', 'bambang@gmail.com', 'Laki-Laki', 54, 170);
+        const data6 = new BMIPasien (6, '2024-11-22', 'P006', 'Sinta', 'Malang', '2009-02-07', 'sinta@gmail.com', 'Perempuan', 57, 155);
+        const data7 = new BMIPasien (7, '2024-11-22', 'P007', 'Bambang', 'Madiun', '2009-09-02', 'bambang@gmail.com', 'Laki-Laki', 63, 163);
+        
+        const daftarPasien = ([data1, data2, data3, data4, data5, data6, data7]);
+        
+        // looping
+        daftarPasien.forEach(data => {
+            console.log(`Nama: ${data.pasien.nama}`);
+            console.log(`BMI: ${data.bmi.nilaiBMI()}`);
+            console.log(`Status: ${data.bmi.statusBMI()}`);
+            console.log(`----------`);
+        })
+
+    </script>
+</body>
+</html>
