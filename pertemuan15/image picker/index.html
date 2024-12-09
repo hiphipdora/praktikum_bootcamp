@@ -6,7 +6,8 @@
     <title>Image Picker</title>
 </head>
 <body>
-    <select name="" id="selectImg">
+    <select name="" id="selectImg" onchange="imgPicker()">
+        <option value=""selected disabled>-- Pilih Pokemon --</option>
         <option value="normal">Eeve</option>
         <option value="fire">Flareon</option>
         <option value="water">Vaporeon</option>
@@ -17,6 +18,10 @@
         <option value="grass">Leafeon</option>
         <option value="ice">Glaceon</option>
     </select>
+
+    <figure>
+        <img id="imgFigure" src="" alt="">
+    </figure>
 
     <script src="script.js"></script>
 </body>
